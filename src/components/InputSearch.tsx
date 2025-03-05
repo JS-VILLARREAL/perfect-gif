@@ -38,7 +38,7 @@ export const InputSearch = ({ onNewCategory }: InputSearchProps) => {
             value={inputValue}
             onChange={handleInputChanged}
           />
-          <Button type="submit" className="font-bold">
+          <Button type="submit" className="font-bold text-xs sm:text-sm">
             Add
           </Button>
         </div>

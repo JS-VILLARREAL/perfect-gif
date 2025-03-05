@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="border-dashed border-t py-6 md:py-0">
+    <footer className="border-dashed border-t p-4">
       <div className="container-wrapper">
-        <div className="container p-4">
+        <div className="container">
           <div className="text-balance text-center text-sm leading-loose text-muted-foreground">
             Built by <span className="font-medium">Steven</span>. The source code is available on{' '}
             <a

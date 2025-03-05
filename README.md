@@ -1,54 +1,81 @@
-# React + TypeScript + Vite
+# GIF Perfect App 🎭
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vista previa de la app](./public/perfect-gif.webp)
 
-Currently, two official plugins are available:
+Una aplicación de búsqueda de GIFs desarrollada con **React + Vite**, que consume la API de Giphy para mostrar resultados en tiempo real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- [Vite](https://vitejs.dev/) ⚡ - Entorno de desarrollo rápido para React.
+- [React](https://react.dev/) ⚛️ - Biblioteca para construir interfaces de usuario.
+- [TailwindCSS](https://tailwindcss.com/) 🎨 - Estilos modernos y responsivos.
+- [Giphy API](https://developers.giphy.com/) 🖼️ - Para obtener los GIFs.
+- [shadcn/ui](https://ui.shadcn.com/) ⚪ - Conjunto de componentes accesibles
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Características
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+✅ Búsqueda de GIFs en tiempo real.<br>
+✅ Interfaz responsiva y moderna con TailwindCSS.<br>
+✅ Manejo eficiente del estado con `useState` y `useEffect`.<br>
+✅ Consumo de API con `fetch`.<br>
+
+---
+
+## 📦 Instalación y Uso
+
+### 1️⃣ Clona el repositorio
+
+```sh
+ git clone https://github.com/JS-VILLARREAL/perfect-gif.git
+ cd perfect-gif
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2️⃣ Instala las dependencias
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```sh
+ npm install
 ```
+
+### 3️⃣ Configura tu clave de API
+
+Crea un archivo `.env` en la raíz del proyecto y agrega tu clave de Giphy API:
+
+```sh
+VITE_GIPHY_API_KEY=tu_api_key_aqui
+```
+
+### 4️⃣ Inicia el servidor de desarrollo
+
+```sh
+ npm run dev
+```
+
+---
+
+## 📌 Mejoras Futuras
+
+- 🔍 Agregar filtros avanzados de búsqueda.
+- 🎨 Mejorar la UI/UX.
+- 📌 Guardar GIFs favoritos en `localStorage`.
+
+---
+
+## 🛠️ Contribución
+
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama: `git checkout -b feature-nueva`.
+3. Realiza tus cambios y haz un commit: `git commit -m 'Agrega nueva funcionalidad'`.
+4. Sube los cambios: `git push origin feature-nueva`.
+5. Abre un Pull Request.
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia **MIT**.
+
+---
+
+📌 **Desarrollado por [Steven Villarreal](https://github.com/JS-VILLARREAL) 🚀**
