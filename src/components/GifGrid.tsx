@@ -15,11 +15,8 @@ export const GifGrid = ({ category }: GifGridProps) => {
   return (
     <>
       <div className="flex justify-between items-center my-6">
-        <h1 className="text-2xl tracking-tighter font-bold text-center">
-          GIF{' '}
-          <span className="animate-text-gradient inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
-            {category}
-          </span>
+        <h1 className="text-base md:text-lg tracking-tighter font-bold text-center animate-text-gradient inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
+          GIF {category}
         </h1>
         <Button variant="destructive" size="icon" className="cursor-pointer">
           <Trash2 />

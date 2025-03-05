@@ -17,7 +17,7 @@ export const App = () => {
   };
 
   return (
-    <div className="p-20">
+    <div className="p-6 sm:pb-14 lg:p-20">
       {/* <Header /> */}
       <InputSearch
         // onAddCategory={setCategories}
